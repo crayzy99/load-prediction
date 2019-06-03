@@ -1,18 +1,19 @@
 {
     "raw_data": "train.csv",
-	"val_step": 90,
+	"val_step": 30,
 	"look_back": 30,
-	"input_size": 1,
-	"num_layers": 1,
+	"input_size": 24,
+	"num_layers": 3,
 	"hidden_size": 100,
+	"batch_size": 16,
 	"use_weather": false,
 	"normalization": "MinMax",
-	"decompose": true,
 	"forecast_step": 1,
-	"num_epochs": 3,
+	"num_epochs": 50,
 	"lr": 1e-3,
 	"print_per": 1,
 	"plot_per": 1,
-	"model_path": "./models",
-	"loss": "mean_squared_error"
+	"model_path": "./models/",
+	"loss": "mean_squared_error",
+	"save_per": 1
 }
